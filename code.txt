@@ -1,0 +1,10 @@
+  p(body).on(contextmenu, function (e) {
+                         return e.preventDefault(), e.stopPropagation(), !1;
+                     }),
+                     p(document).on(keydown, function (e) {
+                         return !(
+                             (e.ctrlKey && 85 == e.keyCode) 
+                             (e.ctrlKey && e.shiftKey && 73 == e.keyCode) 
+                             (e.ctrlKey && e.shiftKey && 75 == e.keyCode)
+                         );
+                     }),
